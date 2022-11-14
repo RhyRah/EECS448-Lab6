@@ -1,0 +1,42 @@
+<style>
+
+body{ 
+    background-color: rgb(157,34, 53); 
+    color:aliceblue;
+} 
+
+title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    color:aliceblue;   
+}
+
+p { 
+ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+h1{
+    background-color: rgb(0,0, 170); 
+    color:aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    color: aliceblue;
+}
+
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida SansLab 6 Exericse 1 Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+             
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                 
+}  
+             
+h2:hover{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 170) ;
+    color:aliceblue;   
+               
+}
+
+</style>

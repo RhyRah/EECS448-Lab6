@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <head>
+        <title> Exercise Three </title>
+    </head>
+    
+    <body>
+        <center><h1>Merch Store</h1></center>
+        <center><h3>Buy merchandise of your favorite sports teams!</h3></center>
+        
+        <form action= "customerBackend.php" method="post">
+        
+            <label for="username">Username: </label>
+            <input type="email" id="username" name="username"><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+            
+            <p> Please select how many item(s) you would like </p>
+            
+            <label for="ballnum">$43.99 Team signed KU Basketball  </label>
+            <input type="text" id="ballnum" name="ballnum"><br>
+            
+            <label for="billnum">$60.99 Bill Self Poster</label>
+            <input type="text" id="billnum" name="billnum"><br>
+    
+            <label for="fpjnum">$75.99 Favorite Player's Jersey</label>
+            <input type="text" id="fpjnum" name="fpjnum"><br>
+            
+            
+            <p> Please select shipping time </p>
+            <input type= "radio" id= "free" name= "ship" value= "0">
+            <label for= "free"> Free 7 day shipping </label>
+            <input type= "radio" id= "overnight" name= "ship" value= "50.00">
+            <label for= "overnight"> $50.00 over night shipping </label><br>
+            <input type= "radio" id= "threeday" name= "ship" value= "5.00">
+            <label for= "threeday"> $5.00 three day shipping</label><br><br>
+        
+        
+            <input type="reset" value="Reset">
+            <button id="button" >Submit</button>
+        
+        </form>
+        
+        
+        <br><br><br><center><h2>ROCK CHALK!!!</h2></center>
+        
+        <br><center><img src="/home/s710k942/public_html/448_lab6/ku.jpg" height="500" width="500"></center>
+        
+        <style>
+                  
+            body{ 
+            background-color: rgb(157,34, 53); 
+            color:aliceblue;
+            } 
+
+            title{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+                color:aliceblue;   
+            }
+            p { 
+ 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            } 
+
+            h1{
+                background-color: rgb(0,0, 170); 
+                color:aliceblue;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+                color: aliceblue;
+              }
+
+
+            h3{
+                font-family: 'Lucida Sans', 'Lucida SansLab 6 Exericse 1 Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             }
+
+             
+            h2{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                 
+             }  
+             
+            h2:hover{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: rgb(0, 0, 170) ;
+                color:aliceblue;   
+               
+              }
+       
+        
+        </style>
+        
+        
+               
+        <script>
+        
+            function onSubmit() {
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var ballnum = document.getElementById('ballnum').value;
+                var billnum = document.getElementById('billnum').value;
+                var fpjnum = document.getElementById('fpjnum').value;
+                var ship = document.getElementsByName('ship');
+                
+                if(username == "" || password == ""){
+                    alert("Please fill out username and/or password");
+                    window.location.reload();        
+                }
+                
+                else if ((ballnum == "" || billnum == "" || fpjnum == "") || (ballnum < 0 || billnum < 0 || fpjnum < 0)){
+                    alert("Please input a number 0 or greater for items");
+                    window.location.reload(); 
+                                 
+                }
+                
+                else if(ship == ""){
+                    alert("Select a shipping time");
+                    window.location.reload(); 
+                       
+                }
+                
+  
+             }
+             
+                document.getElementById("button").addEventListener("click",onSubmit);
+      
+        </script>
+        
+    </body>
+
+
+</html>
